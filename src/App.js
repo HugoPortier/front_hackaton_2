@@ -1,4 +1,5 @@
 import './App.css';
+import CardContainer from './components/CardContainer';
 
 import Navbar from './components/Navbar';
 import Banner from './components/Banner';
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Banner />
+      <CardContainer />
     </div>
   );
 }
