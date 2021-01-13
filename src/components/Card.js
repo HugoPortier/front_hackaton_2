@@ -1,11 +1,11 @@
 import React from 'react'
 
 function Card(props) {
-    const info = props;
+    
     return (
         <div className="individual-card">
-            <img src='' ></img>
-            <p></p>
+            <img src={props.info.image} alt={props.info.nom}></img>
+            <p>{props.info.nom}</p>
         </div>
     )
 }

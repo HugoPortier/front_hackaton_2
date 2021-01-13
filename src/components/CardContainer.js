@@ -1,27 +1,24 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Card from './Card';
 import axios from 'axios';
 
+const CardContainer = () => {
+    const [potions, setPotions] = useState([]);
+    console.log(potions)
 
-function CardContainer() {
-    const [potions, setPotions]= useState([]);
-
-    const getPotions = () => {
-        axios.get('http://localhost:5000/potions')
-        .then(response => response.data)
-        .then(data => {
-            setPotions(data.results[0])
-        })
-    }
+    useEffect(() => {
+    axios.get("http://localhost:5000/potions")
+    .then((x) => {
+        // console.log(x);
+        setPotions(x.data)});
+    }, []);
     return (
-        <div className="card-container">
-            {potions.map((potion, index) => {
-                return(
-                    <Card key={index} info={potion}/>
-                )
+        <div>
+            {potions && potions.map((potion, index) => {
+                return < Card info={potion} key={index}/>
             })}
         </div>
     )
 }
-
 export default CardContainer;
+
