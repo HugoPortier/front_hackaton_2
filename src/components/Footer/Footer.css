@@ -1,15 +1,16 @@
 .Footer-container{
-    background-color:rgb(247, 244, 241);
+    background-color:whitesmoke;
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    padding: 3%;
+    padding: 0.2% 2em;
 }
 .Footer-logo{
     display: flex;
     align-items: center;
-    font-size: 30px;
+    font-family: 'Poiret One', cursive;
+    font-size: 24px;
     border-right: 2px solid violet;
 
 }
