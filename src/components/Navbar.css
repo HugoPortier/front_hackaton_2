@@ -1,0 +1,17 @@
+.navbar{
+    text-align: end;
+    padding: 0.2% 2em;
+    font-family: 'Poiret One', cursive;
+    font-size: 24px;
+    background-color: whitesmoke
+}
+
+p span{
+    padding-right: 1.5em;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.navbar p span.home {
+    float: left;
+}
