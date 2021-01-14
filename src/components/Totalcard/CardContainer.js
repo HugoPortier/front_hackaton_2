@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 import Card from './Card';
-import ModalExampleModal from './modals/modal'
+import ModalExampleModal from '../modals/modal'
 import axios from 'axios';
 
-import Filter1 from './Filter/Filter1';
-import Filter2 from './Filter/Filter2';
-import Filter3 from './Filter/Filter3';
+import Filter1 from '../Filter/Filter1';
+import Filter2 from '../Filter/Filter2';
+import Filter3 from '../Filter/Filter3';
 
 import './CardContainer.css'
 
@@ -35,7 +35,7 @@ const CardContainer = () => {
                 }))
             })
     }
-
+console.log("changeCategory", changeCategory);
     // useEffect(()=> {
     //     changeCategory();
     // }, [potions])
