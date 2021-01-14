@@ -18,8 +18,8 @@ const ModalExampleModal = (props, info) => {
           <Header>{props.info.nom}</Header>
           <p>Effet : {props.info.effet}</p>
           <p>duration : {props.info.duration}</p>
-          <p>age l'égal requis : {props.info.age_min}</p>
-          <p>age maximum légal : {props.info.age_max}</p>
+          <p>age min : {props.info.age_min}</p>
+          <p>age max : {props.info.age_max}</p>
           <p>Catégorie : {props.info.categorie}</p>
         </Modal.Description>
       </Modal.Content>

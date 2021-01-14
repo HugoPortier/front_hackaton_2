@@ -5,8 +5,6 @@ import Banner from './components/Banner';
 import CardContainer from './components/CardContainer';
 import Footer from'./components/Footer/Footer';
 
-
-
 import './App.css';
 
 function App() {
@@ -14,7 +12,6 @@ function App() {
 
   return (
     <div className="App">
-
         <Navbar />
         <Banner />
         <CardContainer />
