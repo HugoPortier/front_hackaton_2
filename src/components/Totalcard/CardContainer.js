@@ -65,9 +65,11 @@ const CardContainer = () => {
         if(prix) {
             setDisplayPotion(
                 potions.filter((x) => {
-                    return x.prix >= prix
+                    return parseInt(x.prix) >= prix
                 })
             )
+        } else {
+            setDisplayPotion(potions)
         }
     }, [prix, potions])
     
