@@ -51,7 +51,7 @@ const CardContainer = () => {
         if(age) {
             setDisplayPotion(
                 potions.filter((x) => {
-                    return x.age_min >= age
+                    return parseInt(x.age_min) >= age
                 })
             )
         }
