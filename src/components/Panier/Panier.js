@@ -1,6 +1,6 @@
 import React from 'react'
 
-function panier() {
+const panier = () => {
     return (
         <div>
             <h1>

@@ -24,6 +24,7 @@ function App() {
         </Route>
 
         <Route exact path='/panier'>
+        <Navbar/>
         <Panier/>
         </Route>
 
