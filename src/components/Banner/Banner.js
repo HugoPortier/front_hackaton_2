@@ -2,7 +2,7 @@ import React from 'react'
 
 import './Banner.css';
 
-import imgbanner from './img/potionbanner.jpg';
+import imgbanner from '../img/potionbanner.jpg';
 
 function Banner() {
     return (

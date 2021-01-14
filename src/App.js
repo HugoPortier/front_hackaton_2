@@ -1,9 +1,9 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom';
 
-import Navbar from './components/Navbar';
-import Banner from './components/Banner';
-import CardContainer from './components/CardContainer';
+import Navbar from './components/Navbar/Navbar';
+import Banner from './components/Banner/Banner';
+import CardContainer from './components/Totalcard/CardContainer';
 import Footer from'./components/Footer/Footer';
 import Panier from './components/Panier/Panier'
 
