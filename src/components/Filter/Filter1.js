@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Select } from 'semantic-ui-react'
 
 const countryOptions = [
@@ -7,8 +7,18 @@ const countryOptions = [
   { key: 'Magie Noire', value: 'Magie Noire', text: 'Magie Noire' },
 ]
 
-const SelectExample = () => (
-  <Select placeholder='Filter by category' options={countryOptions} />
-)
+function SelectExample() {
+  const [category, setCategory] = useState({
+    category: ''
+  });
+
+  const handleCategory = (e) => {
+    console.log(e.target.innerText);
+    setCategory({ ...category, category: e.target.innerText });
+  };
+  return(
+    <Select placeholder='Filter by category' options={countryOptions} onChange={handleCategory} />
+  )
+}
 
 export default SelectExample;
