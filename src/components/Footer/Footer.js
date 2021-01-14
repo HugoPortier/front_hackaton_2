@@ -12,14 +12,14 @@ function Footer() {
     return (
         <div className="Footer-container">
            <div className="Footer-logo">
-             <p>E-potion</p>
+             <p className="text-logo">E-potion</p>
              <img src='./logo.png' alt='logo-potion' />
            </div>
            <div className="Footer-lien">
              <a href="@">Qui nous sommes?</a><br/>
              <a href="@">Partenaires</a>
              </div>
-           <div class="social-container">
+           <div className="social-container">
              <a href="@" className="youtube social">
                 <FontAwesomeIcon icon={faYoutube} size="2x" />
              </a>
