@@ -1,14 +1,23 @@
 import React from 'react'
 import { Select } from 'semantic-ui-react'
 
-const countryOptions = [
-  { key: 'af', value: 'af', text: '5 to 15' },
-  { key: 'ax', value: 'ax', text: '16 to 30' },
-  { key: 'al', value: 'al', text: '30 and more' },
+const priceOptions = [
+  { key: 'all', value: null, text: 'Afficher tout' },
+  { key: 'af', value: 5, text: '5 - 15' },
+  { key: 'ax', value: 15, text: '16 - 30' },
+  { key: 'al', value: 30, text: '30+' },
 ]
 
-const SelectExample = () => (
-  <Select placeholder='Filter by price' options={countryOptions} />
-)
+function SelectExample(props) {
+
+  const handleChange = (e) => {
+    const selectedOption = priceOptions.filter(option => option.text === e.target.innerText);
+    props.filter(selectedOption.value);
+  }
+  
+  return(
+    <Select placeholder='Filter by price' options={priceOptions} onChange={(e) => handleChange(e)} />
+  )
+}
 
 export default SelectExample;
