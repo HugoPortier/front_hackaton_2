@@ -9,9 +9,9 @@ const ModalExampleModal = (props, info) => {
       onClose={() => setOpen(false)}
       onOpen={() => setOpen(true)}
       open={open}
-      trigger={<Button>Show Modal</Button>}
+      trigger={<Button>voir plus</Button>}
       >
-      <Modal.Header>Select a Photo</Modal.Header>
+      <Modal.Header>POTION</Modal.Header>
       <Modal.Content image >
         <img className="image-modal" src={props.info.image} alt={props.info.nom}></img>
         <Modal.Description>
@@ -25,10 +25,10 @@ const ModalExampleModal = (props, info) => {
       </Modal.Content>
       <Modal.Actions>
         <Button color='black' onClick={() => setOpen(false)}>
-          Nope
+          return
         </Button>
         <Button
-          content="Yep, that's me"
+          content="buy"
           labelPosition='right'
           icon='checkmark'
           onClick={() => setOpen(false)}
