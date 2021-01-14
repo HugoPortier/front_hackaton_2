@@ -14,21 +14,16 @@ const Panier = () => {
         setPanier(res.data)
     })
     
-}, [])
+}, [panier])
 
 
 const delete_panier = (id) => {
     axios.delete(`http://localhost:5000/panier/${id}`)
     .then(res => {
-        setPanier(res.data[0])
+        setPanier(panier.filter((item)=> item.id !== id ))
     })
 }
-useEffect(() => {
-    axios.get(`http://localhost:5000/panier`)
-    .then(res => {console.log(res);
-    })
-    
-}, [exterminate])
+
 
     return (
         <div>
