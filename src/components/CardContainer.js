@@ -16,15 +16,21 @@ const CardContainer = () => {
         setPotions(x.data)});
     }, []);
     return (
-        <div className='bloc-img-description'>
-            {potions && potions.map((potion, index) => {
-                return(
-                    <div>
-                        <Card info={potion} key={index} />
-                        <ModalExampleModal info={potion} key={index}/>
-                    </div>
-                )
-            })}
+        <div>
+            <h1 className="catalog-title">Nos potions</h1>
+            <div className="block-filter-description">
+                <div className="block-filter"></div>
+                <div className='bloc-img-description'>
+                    {potions && potions.map((potion, index) => {
+                        return(
+                            <div>
+                                <Card info={potion} key={index} />
+                                <ModalExampleModal info={potion} key={index}/>
+                            </div>
+                        )
+                    })}
+                </div>
+            </div>
         </div>
     )
 }
