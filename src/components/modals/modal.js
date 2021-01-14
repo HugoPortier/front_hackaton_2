@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button, Header, Modal } from 'semantic-ui-react'
 
+import './modal.css' ;
 const ModalExampleModal = (props, info) => {
   const [open, setOpen] = React.useState(false)
   return (
@@ -11,15 +12,15 @@ const ModalExampleModal = (props, info) => {
       trigger={<Button>Show Modal</Button>}
       >
       <Modal.Header>Select a Photo</Modal.Header>
-      <Modal.Content image>
-        <img src={props.info.image} alt={props.info.nom}></img>
+      <Modal.Content image >
+        <img className="image-modal" src={props.info.image} alt={props.info.nom}></img>
         <Modal.Description>
-          <Header>Default Profile Image</Header>
-          <p>
-            We've found the following gravatar image associated with your e-mail
-            address.
-          </p>
-          <p>Is it okay to use this photo?</p>
+          <Header>{props.info.nom}</Header>
+          <p>Effet : {props.info.effet}</p>
+          <p>duration : {props.info.duration}</p>
+          <p>age l'égal requis : {props.info.age_min}</p>
+          <p>age maximum légal : {props.info.age_max}</p>
+          <p>Catégorie : {props.info.categorie}</p>
         </Modal.Description>
       </Modal.Content>
       <Modal.Actions>

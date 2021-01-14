@@ -3,6 +3,8 @@ import Card from './Card';
 import ModalExampleModal from './modals/modal'
 import axios from 'axios';
 
+import './CardContainer.css'
+
 const CardContainer = () => {
     const [potions, setPotions] = useState([]);
     console.log("potions", potions)
@@ -14,7 +16,7 @@ const CardContainer = () => {
         setPotions(x.data)});
     }, []);
     return (
-        <div>
+        <div className='bloc-img-description'>
             {potions && potions.map((potion, index) => {
                 return(
                     <div>

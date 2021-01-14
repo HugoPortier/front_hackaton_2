@@ -1,9 +1,13 @@
 import React from 'react'
+import '../App.css';
 
-function Card(props, potion, index) {
+import './Card.css'
+
+
+function Card(props) {
     
     return (
-        <div className="individual-card">
+        <div className="individual-card" >
             <img src={props.info.image} alt={props.info.nom}></img>
             <p>{props.info.nom}</p>
         </div>
