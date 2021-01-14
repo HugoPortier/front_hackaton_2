@@ -1,0 +1,4 @@
+.bloc-img-description{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
