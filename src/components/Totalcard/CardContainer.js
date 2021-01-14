@@ -44,6 +44,8 @@ const CardContainer = () => {
                     return x.categorie === categorie
                 })
             )
+        } else {
+            setDisplayPotion(potions)
         }
     }, [categorie, potions])
 
@@ -54,6 +56,8 @@ const CardContainer = () => {
                     return parseInt(x.age_min) >= age
                 })
             )
+        } else {
+            setDisplayPotion(potions)
         }
     }, [age, potions])
 
