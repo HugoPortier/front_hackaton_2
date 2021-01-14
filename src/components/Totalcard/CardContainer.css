@@ -1,4 +1,23 @@
+.catalog-title {
+    margin: 0;
+    padding: 2%;
+    border-bottom: rgb(66, 64, 80) 1px solid;
+    text-transform: uppercase;
+}
+
 .bloc-img-description{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding-top: 3%;
+    padding-bottom: 4%;
+}
+
+.block-filter {
+    width: 64%;
+    background-color: #e7ebef;
+    border-right: solid 1px #626473;
+}
+
+.block-filter-description {
+    display: flex;
 }

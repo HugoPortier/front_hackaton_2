@@ -2,13 +2,20 @@ import React from 'react'
 import { Select } from 'semantic-ui-react'
 
 const countryOptions = [
-  { key: 'af', value: 'af', text: '<15' },
-  { key: 'ax', value: 'ax', text: '15 to 60' },
-  { key: 'al', value: 'al', text: '>60' },
+  { key: 'af', value: 15, text: 15 },
+  { key: 'ax', value: 30, text: 30 },
+  { key: 'al', value: 60, text: 60 },
 ]
 
-const SelectExample = () => (
-  <Select placeholder='Filter by age' options={countryOptions} />
-)
+function SelectExample(props) {
+
+  const handleChange = (e) => {
+    props.filter(e.target.innerText);
+  }
+  
+  return(
+    <Select placeholder='Filter by age' options={countryOptions} onChange={(e) => handleChange(e)} />
+  )
+}
 
 export default SelectExample;

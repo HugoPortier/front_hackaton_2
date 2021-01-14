@@ -1,28 +1,20 @@
-import React, { useState } from 'react'
 import { Select } from 'semantic-ui-react'
 
 const countryOptions = [
   { key: 'Amour', value: 'Amour', text: 'Amour' },
   { key: 'Chance', value: 'Chance', text: 'Chance' },
-  { key: 'Magie Noire', value: 'Magie Noire', text: 'Magie Noire' },
+  { key: 'Magie noire', value: 'Magie noire', text: 'Magie noire' },
 ]
 
 function SelectExample(props) {
-  const [category, setCategory] = useState({
-    category: ''
-  });
 
-  const filterPotion = () => {
-    props.filter(category);
-  }
+const handleChange = (e) => {
+  console.log(e.target.innerText);
+  props.filter(e.target.innerText);
+}
 
-  const handleCategory = (e) => {
-    console.log(e.target.innerText);
-    setCategory({ ...category, category: e.target.innerText });
-    filterPotion(category);
-  };
   return(
-    <Select placeholder='Filter by category' options={countryOptions} onChange={handleCategory} />
+    <Select placeholder='Filter by category' options={countryOptions} onChange={(e) => handleChange(e)} />
   )
 }
 

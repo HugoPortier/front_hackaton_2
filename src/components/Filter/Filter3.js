@@ -7,8 +7,15 @@ const countryOptions = [
   { key: 'al', value: 'al', text: '30 and more' },
 ]
 
-const SelectExample = () => (
-  <Select placeholder='Filter by price' options={countryOptions} />
-)
+function SelectExample(props) {
+
+  const handleChange = (e) => {
+    props.filter(e.target.innerText);
+  }
+  
+  return(
+    <Select placeholder='Filter by price' options={countryOptions} onChange={(e) => handleChange(e)} />
+  )
+}
 
 export default SelectExample;
