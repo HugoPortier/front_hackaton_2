@@ -1,10 +1,23 @@
-import React from 'react'
+import axios from 'axios';
+import React,{ useState } from 'react'
+import { Link } from 'react-router-dom';
+
 import { Button, Header, Modal } from 'semantic-ui-react'
 
 import './modal.css' ;
-const ModalExampleModal = (props, info) => {
-  const [open, setOpen] = React.useState(false)
-  return (
+
+const ModalExampleModal = ({ info }) => {
+  
+  const [open, setOpen] = useState(false)
+
+  const push = async () => { 
+      setOpen(false)
+      await axios.post(`http://localhost:5000/panier`, info
+)
+    .then(res => console.log("res", res))
+    }
+      console.log("info", info);
+        return (
       <Modal
       onClose={() => setOpen(false)}
       onOpen={() => setOpen(true)}
@@ -13,28 +26,32 @@ const ModalExampleModal = (props, info) => {
       >
       <Modal.Header>POTION</Modal.Header>
       <Modal.Content image >
-        <img className="image-modal" src={props.info.image} alt={props.info.nom}></img>
+        <img className="image-modal" src={info.image} alt={info.nom}></img>
         <Modal.Description>
-          <Header>{props.info.nom}</Header>
-          <p>Effet : {props.info.effet}</p>
-          <p>duration : {props.info.duration}</p>
-          <p>age min : {props.info.age_min}</p>
-          <p>age max : {props.info.age_max}</p>
-          <p>Catégorie : {props.info.categorie}</p>
-          <p>Prix : {props.info.prix}</p>
+          <Header>{info.nom}</Header>
+          <p>Effet : {info.effet}</p>
+          <p>duration : {info.duration}</p>
+          <p>age l'égal requis : {info.age_min}</p>
+          <p>age maximum légal : {info.age_max}</p>
+          <p>Catégorie : {info.categorie}</p>
+          <p>Prix : {info.prix}</p>
         </Modal.Description>
       </Modal.Content>
       <Modal.Actions>
         <Button color='black' onClick={() => setOpen(false)}>
           return
         </Button>
+
+            <Link to='/panier'>
         <Button
-          content="buy"
+          content="ajouter au panier"
           labelPosition='right'
           icon='checkmark'
-          onClick={() => setOpen(false)}
+          onClick={() => push()}
           positive
         />
+            </Link>
+
       </Modal.Actions>
     </Modal>
   )

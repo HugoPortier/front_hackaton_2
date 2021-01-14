@@ -6,7 +6,10 @@ function Navbar() {
     return (
         <div className="navbar">
             <p>
+            <Link to='/'>
                 <span className="home">E-Potion</span>
+            </Link>
+
                 <span>Nos potions</span>
 
             <Link to='/Panier'>
