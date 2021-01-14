@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Card(props) {
+function Card(props, potion, index) {
     
     return (
         <div className="individual-card">
