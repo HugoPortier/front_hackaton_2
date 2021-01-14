@@ -37,7 +37,6 @@ const CardContainer = () => {
             })
     }, []);
 
-<<<<<<< HEAD:src/components/CardContainer.js
     useEffect(() => {
         if(categorie) {
             setDisplayPotion(
@@ -57,21 +56,6 @@ const CardContainer = () => {
             )
         }
     }, [age, potions])
-=======
-    const changeCategory = () => {
-        axios.get("http://localhost:5000/potions")
-            .then(x => x.data)
-            .then(data => {
-                setPotions(data.filter((x) => {
-                    return x.categorie === {tempPotions}
-                }))
-            })
-    }
-console.log("changeCategory", changeCategory);
-    // useEffect(()=> {
-    //     changeCategory();
-    // }, [potions])
->>>>>>> 5b96eb71b2657c86b3542d98f9fadb71f51b375c:src/components/Totalcard/CardContainer.js
 
     useEffect(() => {
         if(prix) {
