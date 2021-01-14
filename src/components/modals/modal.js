@@ -1,8 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+
 import { Button, Header, Modal } from 'semantic-ui-react'
 
 import './modal.css' ;
 const ModalExampleModal = (props, info) => {
+
   const [open, setOpen] = React.useState(false)
   return (
       <Modal
@@ -27,6 +30,8 @@ const ModalExampleModal = (props, info) => {
         <Button color='black' onClick={() => setOpen(false)}>
           return
         </Button>
+
+            <Link to='/panier'>
         <Button
           content="buy"
           labelPosition='right'
@@ -34,6 +39,8 @@ const ModalExampleModal = (props, info) => {
           onClick={() => setOpen(false)}
           positive
         />
+            </Link>
+
       </Modal.Actions>
     </Modal>
   )

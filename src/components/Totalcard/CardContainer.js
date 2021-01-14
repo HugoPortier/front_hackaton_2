@@ -12,7 +12,7 @@ import './CardContainer.css'
 const CardContainer = () => {
     const [potions, setPotions] = useState([]);
     const [tempPotions,setTempPotions] = useState([]);
-    // console.log(potions);
+    console.log("potion", potions);
 
     const filterPotion = (category) => {
         setTempPotions(category)
