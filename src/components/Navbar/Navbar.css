@@ -5,7 +5,10 @@
     padding: 0.2% 2em;
     font-family: 'Poiret One', cursive;
     font-size: 24px;
-    background-color: whitesmoke
+    background-color: whitesmoke;
+    position: fixed;
+    width: 100%;
+    
 }
 
 p span{
