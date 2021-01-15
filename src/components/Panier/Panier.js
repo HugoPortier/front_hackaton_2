@@ -27,30 +27,20 @@ const delete_panier = (id) => {
 
 
 return (
-  <div>
-  <tr>
-      <th></th>
-      <th>Name</th>
-      <th>Prix</th>
-      <th>Supprimer</th>
-    </tr>
-  <div id="paniertest">
-      {panier.map((item)=>{
-
+    <div id="paniertest">
+        {panier.map((item)=>{
   return (
-  <div>
-    <tr>
-      <img alt={item.name} src={item.image} id="Julien"/>
-      <td>{item.nom}</td>
-      <td>{item.prix}</td>
-      <td><button
-            onClick={()=> delete_panier(item.id)}
-            >X</button></td>
-    </tr>
-  </div>
-  )})}      
-  </div>
+    <div>
+    <img
+        src={item.image} alt={item.nom} />
+          <p>{item.nom}</p>
+          <p>{item.prix}</p>
+              <button
+              onClick={()=> delete_panier(item.id)}
+              >X</button>
+        </div>
+      )
+    })}
   </div>
 )}
-
 export default Panier;
