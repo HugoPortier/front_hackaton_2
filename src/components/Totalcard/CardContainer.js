@@ -80,9 +80,11 @@ const CardContainer = () => {
             <Filter3 filter={filterPotionThree}/>
             {displayPotion.map((potion, index) => {
                 return(
-                    <div>
-                        <Card info={potion} key={index}/>
-                        <ModalExampleModal info={potion} key={potion.id} id="cardcss"/>
+                    <div className="parent-card">
+                        <div className="block-card">
+                            <Card info={potion} key={index}/>
+                            <ModalExampleModal info={potion} key={potion.id} id="cardcss"/>
+                        </div>
                     </div>
                 )
             })}

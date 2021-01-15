@@ -4,5 +4,20 @@ margin-right: 3%
 }
 
 #buttoncss {
-    background-color: rgb(32, 175, 241)
+    background-color: rgb(149 223 234);
+    color: #4a4444;
+    margin-bottom: 11%;
+    margin-top: 6%;
+    border-radius: 68px;
+    padding: 15px;
+    transition: 0.2s;
 }
+
+#buttoncss:hover {
+    background-color:#657da0;
+    color: white;
+}
+
+
+
+
