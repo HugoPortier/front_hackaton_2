@@ -1,0 +1,28 @@
+#paniertest {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 24px;
+    border-top: solid 1px;
+    margin: 2% 0px;
+}
+
+#imgpanier {
+    height: 300px;
+    width: 240px;
+    margin: 2% 0px;
+    box-sizing: unset;
+}
+
+#namepanier {
+
+}
+
+#prixpanier {
+
+}
+
+#buttonpanier {
+    height: 30px;
+    width: 70px;
+}
