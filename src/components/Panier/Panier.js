@@ -27,15 +27,15 @@ const delete_panier = (id) => {
 
 
 return (
-    <div id="paniertest">
+    <div>
         {panier.map((item)=>{
   return (
-    <div>
-    <img
+    <div id="paniertest">
+    <img id="imgpanier"
         src={item.image} alt={item.nom} />
-          <p>{item.nom}</p>
-          <p>{item.prix}</p>
-              <button
+          <p id="namepanier">{item.nom}</p>
+          <p id="prixpanier">{item.prix} €</p>
+              <button id="buttonpanier"
               onClick={()=> delete_panier(item.id)}
               >X</button>
         </div>
