@@ -22,7 +22,7 @@ const ModalExampleModal = ({ info }) => {
       onClose={() => setOpen(false)}
       onOpen={() => setOpen(true)}
       open={open}
-      trigger={<Button id="buttoncss">Plus d'infos</Button>}
+      trigger={<Button id="buttoncss">Découvrir</Button>}
       >
       <Modal.Header>POTION</Modal.Header>
       <Modal.Content image >
@@ -30,16 +30,16 @@ const ModalExampleModal = ({ info }) => {
         <Modal.Description>
           <Header>{info.nom}</Header>
           <p>Effet : {info.effet}</p>
-          <p>duration : {info.duration}</p>
-          <p>age l'égal requis : {info.age_min}</p>
-          <p>age maximum légal : {info.age_max}</p>
+          <p>Durée : {info.duration} secondes</p>
+          <p>Age minimum légal : {info.age_min} ans</p>
+          <p>Age maximum légal : {info.age_max} ans</p>
           <p>Catégorie : {info.categorie}</p>
-          <p>Prix : {info.prix}</p>
+          <p>Prix : {info.prix} €</p>
         </Modal.Description>
       </Modal.Content>
       <Modal.Actions>
         <Button color='black' onClick={() => setOpen(false)}>
-          return
+          retour
         </Button>
 
         <Button

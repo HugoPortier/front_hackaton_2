@@ -16,7 +16,7 @@ function SelectExample(props) {
   }
   
   return(
-    <Select placeholder='Filter by price' options={priceOptions} onChange={(e) => handleChange(e)} />
+    <Select placeholder='Filter par prix' options={priceOptions} onChange={(e) => handleChange(e)} />
   )
 }
 
