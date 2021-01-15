@@ -24,3 +24,15 @@
 #cardcss {
     background-color: aquamarine;
 }
+
+.block-card {
+    border: 1px solid #9a9797;
+    height: 98%;
+    margin-top: 5%;
+}
+
+.parent-card {
+    margin: auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}

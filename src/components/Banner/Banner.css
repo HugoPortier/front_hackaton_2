@@ -1,7 +1,15 @@
 #banner img {
-    background-size: cover;
-    max-width: 100%;
-    height: auto;
-    width: 75%;
-    margin-top: 3%;
+    width: 100%;
+    height: 65vh;
+    position: relative;
+}
+
+.banner-title {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 8vh;
+    width: 71vh;
 }
