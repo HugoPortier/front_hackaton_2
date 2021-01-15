@@ -1,9 +1,6 @@
 import React from 'react'
-import ModalExampleModal from '../modals/modal'
-
 
 import './Card.css'
-
 
 function Card(props) {
     
