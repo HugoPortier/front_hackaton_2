@@ -9,14 +9,9 @@ function Navbar() {
             <Link to='/'>
                 <span className="home">E-Potion</span>
             </Link>
-
-                <span>Nos potions</span>
-
             <Link to='/Panier'>
                 <span>Panier</span>
             </Link>
-
-                <span>Connexion</span>
             </p>
     </div>
     )
