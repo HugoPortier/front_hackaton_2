@@ -22,7 +22,7 @@ const ModalExampleModal = ({ info }) => {
       onClose={() => setOpen(false)}
       onOpen={() => setOpen(true)}
       open={open}
-      trigger={<Button className="button-modal">voir plus</Button>}
+      trigger={<Button id="buttoncss">Plus d'infos</Button>}
       >
       <Modal.Header>POTION</Modal.Header>
       <Modal.Content image >

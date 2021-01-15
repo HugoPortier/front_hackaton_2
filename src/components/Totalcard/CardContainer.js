@@ -81,8 +81,8 @@ const CardContainer = () => {
             {displayPotion.map((potion, index) => {
                 return(
                     <div>
-                        <Card info={potion} key={index} test={<ModalExampleModal />} />
-                        <ModalExampleModal info={potion} key={potion.id}/>
+                        <Card info={potion} key={index}/>
+                        <ModalExampleModal info={potion} key={potion.id} id="cardcss"/>
                     </div>
                 )
             })}

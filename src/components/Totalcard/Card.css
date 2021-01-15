@@ -1,25 +1,11 @@
 .individual-card img {
-    width: 47%;
     border-radius: 15px;
     margin-top: 5%;
+    height: 300px;
+    width: 220px;
 }
 
-.card-potion {
-    margin: auto;
-    margin-top: 4%;
-    margin-bottom: 4%;
-    border-radius: 40px;
-}
-
-.title-potion {
-    padding-bottom: 20%;
-}
-
-.img-potion {
-    height: 240px;
-}
-
-.body-potion {
-    margin-bottom: -9%;
-    z-index: 1;
+#name {
+    padding: 1% 0;
+    font-size: 24px;
 }
