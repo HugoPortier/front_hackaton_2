@@ -8,6 +8,7 @@ function Banner() {
     return (
         <div id="banner">
             <img src={imgbanner} alt="banner" />
+            <h1>Ce super titre qui tue la mort</h1>
         </div>
     )
 }

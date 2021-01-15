@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React,{ useState } from 'react'
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 import { Button, Header, Modal } from 'semantic-ui-react'
 
@@ -22,7 +22,7 @@ const ModalExampleModal = ({ info }) => {
       onClose={() => setOpen(false)}
       onOpen={() => setOpen(true)}
       open={open}
-      trigger={<Button>voir plus</Button>}
+      trigger={<Button id="buttoncss">Plus d'infos</Button>}
       >
       <Modal.Header>POTION</Modal.Header>
       <Modal.Content image >
@@ -42,7 +42,6 @@ const ModalExampleModal = ({ info }) => {
           return
         </Button>
 
-            <Link to='/panier'>
         <Button
           content="ajouter au panier"
           labelPosition='right'
@@ -50,8 +49,6 @@ const ModalExampleModal = ({ info }) => {
           onClick={() => push()}
           positive
         />
-            </Link>
-
       </Modal.Actions>
     </Modal>
   )
