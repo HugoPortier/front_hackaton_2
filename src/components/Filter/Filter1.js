@@ -16,7 +16,7 @@ const handleChange = (e) => {
 }
 
   return(
-    <Select placeholder='Filter by category' options={categoryOptions} onChange={(e) => handleChange(e)} />
+    <Select placeholder='Filter par catégorie' options={categoryOptions} onChange={(e) => handleChange(e)} />
   )
 }
 

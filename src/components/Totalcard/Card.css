@@ -1,5 +1,12 @@
 .individual-card img {
-    width: 47%;
-    border-radius: 15px;
-    margin-top: 5%;
+    height: 300px;
+    width: 240px;
 }
+
+#name {
+    padding: 5% 0;
+    font-size: 16px;
+    font-family: 'Merienda', cursive;
+    font-weight: bold;
+}
+

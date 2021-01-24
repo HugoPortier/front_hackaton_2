@@ -5,7 +5,7 @@ import Navbar from './components/Navbar/Navbar';
 import Banner from './components/Banner/Banner';
 import CardContainer from './components/Totalcard/CardContainer';
 import Footer from'./components/Footer/Footer';
-import Panier from './components/Panier/Panier'
+import Panier from './components/Panier/Panier';
 
 import './App.css';
 
@@ -17,10 +17,10 @@ function App() {
       <Switch>
 
         <Route exact path='/'>
-        <Navbar />
-        <Banner />
-        <CardContainer />
-        <Footer />
+          <Navbar />
+          <Banner />
+          <CardContainer />
+          <Footer />
         </Route>
 
         <Route exact path='/panier'>
