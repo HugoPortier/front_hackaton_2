@@ -4,15 +4,15 @@ import './Navbar.css';
 
 function Navbar() {
     return (
-        <div className="navbar">
-            <p>
+        <div>
+            <ul className="navbar">
             <Link to='/'>
-                <span className="home">E-Potion</span>
+                <li className="home">E-Potion</li>
             </Link>
             <Link to='/Panier'>
-                <span>Panier</span>
+                <li>Panier</li>
             </Link>
-            </p>
+            </ul>
     </div>
     )
 }

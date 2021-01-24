@@ -1,22 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
 
 .navbar{
-    text-align: end;
-    padding: 0.2% 2em;
-    font-family: 'Poiret One', cursive;
-    font-size: 24px;
-    background-color: whitesmoke;
-    position: fixed;
-    width: 100%;
-    
-}
-
-p span{
-    padding-right: 1.5em;
-    -webkit-background-clip: text;
-    background-clip: text;
-}
-
-.navbar p span.home {
-    float: left;
+display: flex;
+justify-content: space-between;
+list-style: none;
+font-size: large;
+margin-right: 3%;
 }

@@ -34,7 +34,7 @@ return (
     <img id="imgpanier"
         src={item.image} alt={item.nom} />
           <p id="namepanier">{item.nom}</p>
-          <p id="prixpanier">{item.prix} €</p>
+          <p id="prixpanier">{item.prix} </p>
               <button id="buttonpanier"
               onClick={()=> delete_panier(item.id)}
               >X</button>
