@@ -4,7 +4,6 @@ import axios from 'axios'
 const Panier = () => {
 
     const [panier, setPanier] = useState([])
-    const [exterminate, setExterminate] = useState([])
 
     console.log("panier", panier);
 
@@ -14,7 +13,7 @@ const Panier = () => {
         setPanier(res.data)
     })
     
-}, [panier])
+}, [])
 
 
 const delete_panier = (id) => {

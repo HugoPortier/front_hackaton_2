@@ -1,6 +1,5 @@
 import axios from 'axios';
 import React,{ useState } from 'react'
-// import { Link } from 'react-router-dom';
 
 import { Button, Header, Modal } from 'semantic-ui-react'
 
@@ -11,12 +10,12 @@ const ModalExampleModal = ({ info }) => {
   const [open, setOpen] = useState(false)
 
   const push = async () => { 
+    console.log("info", info);
       setOpen(false)
       await axios.post(`http://localhost:5000/panier`, info
 )
     .then(res => console.log("res", res))
     }
-      console.log("info", info);
         return (
       <Modal
       onClose={() => setOpen(false)}
